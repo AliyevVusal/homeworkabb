@@ -35,6 +35,9 @@ document.body.addEventListener('click',(e)=>{
     languagechg.style.display="none";
 })
 
+
+//search
+
 let lmenu = document.getElementById('searchicon');
 let cnav = document.getElementById('cnav');
 
@@ -49,6 +52,7 @@ let cnav = document.getElementById('cnav');
 
 })
 
+
 let searchbar = document.getElementById('search');
 let sidemenu = document.getElementById('searchicon');
 
@@ -60,6 +64,60 @@ sidemenu.addEventListener('click',()=>{
     else{
         searchbar.style.display = 'none';
     }
-
 })
 
+let sicon = document.getElementById('sicon');
+
+sicon.addEventListener('click',()=>{
+    if(cnav.style.display == 'block'){
+        cnav.style.display = 'none';
+        searchbar.style.display = 'block'; 
+    }
+    else{
+        cnav.style.display='block';
+        searchbar.style.display = 'none';
+    }
+})
+
+
+
+
+
+
+
+
+
+//Filter
+
+let filtericon = document.getElementById('sidemenu');
+let filter = document.getElementById('filterbar');
+
+filtericon.addEventListener('click',()=>{
+    if(filter.style.display == 'none'){
+        filter.style.display = 'block';
+    }
+    else{
+        filter.style.display = 'none';
+    }
+})
+
+
+
+let alarm = document.getElementById('alarm');
+
+function Alarm(){
+    alarm.style.display = 'block';
+    let ok = document.getElementById('ok');
+    let dh = document.getElementById('dh');
+    ok.addEventListener('click',(e)=>{
+        e.preventDefault();
+            alarm.style.display = 'none';
+    })
+    dh.addEventListener('click',(e)=>{
+        e.preventDefault();
+        alarm.style.display='none';
+    })
+    
+}
+
+setTimeout(Alarm,2000);
