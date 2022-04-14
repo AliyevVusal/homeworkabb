@@ -1,0 +1,56 @@
+
+
+
+@media (max-width:576px) {
+    
+    header{
+
+        .top{
+            .t-left{
+                ul{
+                    display: none;
+                }
+                span{
+                    display: block !important;
+                }
+                
+            }
+
+        }
+
+        .center{
+            .left{
+                
+                .p-box{
+                    display: none;
+                }
+            }
+
+            .right{
+                a{
+                    display: none;
+                }
+
+                i{
+                    display: block !important;
+                }
+            }
+        }
+
+
+    }
+
+    #language-changer{
+        width: 30% !important;
+    }
+
+    #search{
+        input{
+            width: 90% !important;
+        }
+        i{
+            font-size: 20px !important;
+        }
+    }
+
+}
