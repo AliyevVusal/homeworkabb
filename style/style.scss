@@ -143,6 +143,7 @@ header{
     width: 0%;
     transition: 0.5s;
     overflow: scroll;
+
     .link{
         text-align: center;
         padding: 10px 0;
@@ -162,6 +163,9 @@ header{
             padding: 10px 0;
             .box{
                 width: 100%;
+                margin: 0 5px;
+                border: 1px solid #317ddb;
+                text-align: center;
                 a{
                     text-decoration: none;
                     color: #317ddb;
@@ -293,6 +297,88 @@ header{
     }
 }
 
+#slayder{
+    cursor: grab;
+    background-color: #AFB9CD;
+    overflow: hidden;
+    .all-box{
+        .text-box{
+            margin-top: 150px;
+            color: #fff;
+            h1{
+                margin-bottom: 20px;
+                font-size: 50px;
+                font-weight: bold;
+            }
+            h5{
+                margin-bottom: 20px;
+            }
+            button{
+                border: none;
+                padding: 15px 30px;
+                background-color: #3956C1;
+                color: #fff;
+                border: 1px solid #3956C1;
+                border-radius: 10px;
+            }
+        }
+
+        .imgbox{
+
+            img{
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+#tabmenu{
+    padding: 10px 0;
+    .active{
+        background-color: #317ddb!important;
+        color: #fff!important;
+    }
+    .tab-links{
+        button{
+            margin: 10px 0;
+            border: none;
+            padding: 5px 10px;
+            background-color: #fff;
+            color: #3956C1;
+            border: 1px solid #3956C1;
+            border-radius: 10px;
+        }
+    }
+    .tab-content{
+        background-color: #317ddb;
+        ul{
+            text-align: center;
+            li{
+                list-style: none;
+                a{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.slick-dots{
+    bottom: 100px !important;
+    left: 110px!important;
+    display: inline!important;
+    text-align: start!important;
+    li{
+        ::before{
+            content: '-'!important;
+            font-size: 70px !important;
+            color: #ffffff!important;
+        }
+    }
+}
 
 
 
