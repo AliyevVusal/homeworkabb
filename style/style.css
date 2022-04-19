@@ -397,7 +397,14 @@ header .center .right #burger-menu {
 }
 
 #tabmenu {
+  margin-left: 680px;
   padding: 10px 0;
+}
+
+#tabmenu h1 {
+  color: #317ddb;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 #tabmenu .active {
@@ -415,22 +422,13 @@ header .center .right #burger-menu {
   border-radius: 10px;
 }
 
-#tabmenu .tab-content {
-  background-color: #317ddb;
-}
-
-#tabmenu .tab-content ul {
-  text-align: center;
-}
-
-#tabmenu .tab-content ul li {
-  list-style: none;
-}
-
-#tabmenu .tab-content ul li a {
-  font-size: 20px;
-  text-decoration: none;
+#tabmenu .tab-content div span {
+  padding: 8px 16px;
+  border-radius: 25px;
   color: #fff;
+  font-size: 20px;
+  background-color: #317ddb;
+  margin-left: 35px;
 }
 
 .slick-dots {
@@ -444,5 +442,66 @@ header .center .right #burger-menu {
   content: "-" !important;
   font-size: 70px !important;
   color: #ffffff !important;
+}
+
+#users .top {
+  margin-top: 20px;
+}
+
+#users .top .top img {
+  width: 100%;
+}
+
+#users .top .bottom {
+  text-align: center;
+}
+
+#users .top .bottom h1 {
+  color: #317ddb;
+}
+
+#users .top .bottom span {
+  color: #3956C1;
+}
+
+#users #showb {
+  margin: 40px 0;
+  border: none;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #3956C1;
+  border: 1px solid #3956C1;
+  border-radius: 10px;
+}
+
+#users .bottom {
+  margin-top: 20px;
+}
+
+#users .bottom .top img {
+  width: 100%;
+}
+
+#users .bottom .bottom {
+  text-align: center;
+}
+
+#users .bottom .bottom h1 {
+  color: #317ddb;
+}
+
+#users .bottom .bottom span {
+  color: #3956C1;
+}
+
+#users #closeb {
+  display: none;
+  margin: 40px 0;
+  border: none;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #3956C1;
+  border: 1px solid #3956C1;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -97,24 +97,6 @@ filtericon.addEventListener('click',()=>{
 
 let alarm = document.getElementById('alarm');
 
-function Alarm(){
-    alarm.style.display = 'block';
-    let ok = document.getElementById('ok');
-    let dh = document.getElementById('dh');
-    ok.addEventListener('click',(e)=>{
-        e.preventDefault();
-            alarm.style.display = 'none';
-    })
-    dh.addEventListener('click',(e)=>{
-        e.preventDefault();
-        alarm.style.display='none';
-    })
-    
-}
-
-
-//Alarm
-setTimeout(Alarm,2000);
 
 
 //Slayder
@@ -180,3 +162,92 @@ for(let btn of buttons){
         
     })
 }
+
+//Users
+function GetUsers(){
+
+    document.getElementById('showb').style.display = 'none';
+    document.getElementById('list').style.display = 'flex';
+
+    fetch('https://randomuser.me/api/?results=18')
+    .then(response => response.json())
+    .then(data =>{
+        let x ='';
+
+        data.results.forEach(user=>{
+            x+=`
+            <div class="col-lg-2">
+                <div class="top">
+                    <img src="${user.picture.large}" alt="">
+                </div>
+                <div class="bottom">
+                    <h1>${user.name.first}</h1>
+                    <span>${user.name.last}</span>
+                </div>
+            </div>
+            `
+        })
+
+        document.getElementById('list').innerHTML=x;
+    })
+    .catch(error => console.log(error))
+
+    document.getElementById('closeb').style.display = 'block';
+
+}
+
+function colse() {
+    document.getElementById('list').style.display = 'none';
+    document.getElementById('showb').style.display = 'block';
+    document.getElementById('closeb').style.display='none';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Exchange
+function GetExchange(){
+    fetch('https://v6.exchangerate-api.com/v6/1f3633a9597ed2238065f8dc/latest/USD')
+    .then(response => response.json())
+    .then(data => {
+        
+        
+        let eur = data.conversion_rates.EUR;
+        let rub = data.conversion_rates.RUB;
+        let aze = data.conversion_rates.AZN;
+        
+
+        
+        document.getElementById('azn').innerHTML = aze;
+
+        document.getElementById('rub').addEventListener('click',()=>{
+            document.getElementById('rubl').innerHTML = rub;
+        })
+
+        document.getElementById('eur').addEventListener('click',()=>{
+            document.getElementById('euro').innerHTML = eur;
+        })
+
+        document.getElementById('eur').addEventListener('click',()=>{
+            document.getElementById('euro').innerHTML = eur;
+        })
+
+    })
+    
+        
+    
+    .catch(error => console.log(error))
+}
+GetExchange();

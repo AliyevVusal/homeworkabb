@@ -334,7 +334,13 @@ header{
 }
 
 #tabmenu{
+    margin-left: 680px;
     padding: 10px 0;
+    h1{
+        color: #317ddb;
+        font-size: 35px;
+        font-weight: bold;
+    }
     .active{
         background-color: #317ddb!important;
         color: #fff!important;
@@ -351,16 +357,14 @@ header{
         }
     }
     .tab-content{
-        background-color: #317ddb;
-        ul{
-            text-align: center;
-            li{
-                list-style: none;
-                a{
-                    font-size: 20px;
-                    text-decoration: none;
-                    color: #fff;
-                }
+        div{
+            span{
+                padding: 8px 16px;
+                border-radius: 25px;
+                color: #fff;
+                font-size: 20px;
+                background-color: #317ddb;
+                margin-left: 35px;
             }
         }
     }
@@ -379,6 +383,67 @@ header{
         }
     }
 }
+
+#users{
+    .top{
+        margin-top: 20px;
+        .top{
+            img{
+                width: 100%;
+            }
+        }
+        .bottom{
+            text-align: center;
+            h1{
+                color: #317ddb;
+            }
+            span{
+                color: #3956C1;
+            }
+        }
+    }
+    #showb{
+        margin: 40px 0;
+        border: none;
+        padding: 5px 10px;
+        background-color: #fff;
+        color: #3956C1;
+        border: 1px solid #3956C1;
+        border-radius: 10px;
+    }
+    .bottom{
+        margin-top: 20px;
+        .top{
+            img{
+                width: 100%;
+            }
+        }
+        .bottom{
+            text-align: center;
+            h1{
+                color: #317ddb;
+            }
+            span{
+                color: #3956C1;
+            }
+        }
+    }
+    #closeb{
+        display: none;
+        margin: 40px 0;
+        border: none;
+        padding: 5px 10px;
+        background-color: #fff;
+        color: #3956C1;
+        border: 1px solid #3956C1;
+        border-radius: 10px;
+        
+    }
+
+
+}
+
+
 
 
 
